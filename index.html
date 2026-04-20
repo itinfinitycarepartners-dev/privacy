@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Infinity Care Partners Candidate Travel Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple:      #81348d;
+      --purple-dark: #5c2465;
+      --purple-pale: #f5edf7;
+      --blue:        #6a8fcc;
+      --blue-pale:   #eff6ff;
+      --text:        #1f2937;
+      --muted:       #6b7280;
+      --border:      #e5e7eb;
+      --bg:          #fafafa;
+      --white:       #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple) 55%, #a04db0 100%);
+      color: #fff;
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 100px;
+      padding: 4px 16px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 5vw, 42px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    header h1 span { color: rgba(255,255,255,0.7); font-weight: 400; font-style: italic; }
+    .header-meta {
+      font-size: 13px;
+      opacity: 0.75;
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .header-meta span::before { content: '· '; }
+    .header-meta span:first-child::before { content: ''; }
+
+    /* ── Layout ── */
+    .wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── TOC ── */
+    .toc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--purple);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 40px 0 48px;
+    }
+    .toc-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px 24px;
+    }
+    .toc-list li a {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .toc-list li a:hover { color: var(--purple); text-decoration: underline; }
+    .toc-list li::before { content: '↓ '; color: var(--purple); font-size: 11px; }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 52px;
+      scroll-margin-top: 24px;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--purple-dark);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--purple-pale);
+      border-radius: 8px;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    p { margin-bottom: 14px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 7px;
+      color: var(--text);
+    }
+    li strong { color: var(--purple-dark); font-weight: 500; }
+
+    /* ── Highlight boxes ── */
+    .highlight-box {
+      background: var(--purple-pale);
+      border-left: 3px solid var(--purple);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 15px;
+    }
+    .highlight-box.blue {
+      background: var(--blue-pale);
+      border-left-color: var(--blue);
+    }
+    .highlight-box p { margin: 0; }
+
+    /* ── Contact card ── */
+    .contact-block {
+      background: linear-gradient(135deg, var(--purple-pale), var(--blue-pale));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+    .contact-block p { margin-bottom: 6px; }
+    .contact-block a { color: var(--purple); font-weight: 500; text-decoration: none; }
+    .contact-block a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--purple-dark);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 36px 20px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    footer strong { color: #fff; }
+    footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      header { padding: 40px 20px 36px; }
+      .toc-card { padding: 20px; }
+      .contact-block { padding: 20px; }
+      .toc-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Legal · Privacy</div>
+  <h1>Privacy Policy<br><span>Candidate Travel Portal</span></h1>
+  <p style="opacity:0.85;font-size:15px;max-width:520px;margin:0 auto;">
+    Infinity Care Partners is committed to protecting the personal information of our candidates throughout their relocation journey.
+  </p>
+  <div class="header-meta">
+    <span>Effective Date: April 16, 2026</span>
+    <span>Last Updated: April 19, 2026</span>
+    <span>Version 1.0</span>
+  </div>
+</header>
+
+<main class="wrapper">
+
+  <!-- Table of Contents -->
+  <nav class="toc-card" aria-label="Table of Contents">
+    <h2>Table of Contents</h2>
+    <ol class="toc-list">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#information-collected">Information We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Information</a></li>
+      <li><a href="#sharing">Information Sharing</a></li>
+      <li><a href="#storage">Data Storage &amp; Security</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. Overview -->
+  <section id="overview">
+    <h2><span class="icon">📋</span> 1. Overview</h2>
+    <p>
+      This Privacy Policy explains how <strong>Infinity Care Partners</strong> ("we," "our," or "us") collects, uses, stores, and protects personal information through our <strong>Candidate Travel Portal</strong> mobile application (the "App"). The App is designed exclusively for healthcare professionals ("Candidates") who are relocating to the United States under the sponsorship of Infinity Care Partners.
+    </p>
+    <p>
+      By using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree, please discontinue use of the App and contact your deployment specialist.
+    </p>
+    <div class="highlight-box">
+      <p>
+        <strong>Portal Access:</strong> Access to the App is granted for a limited period — specifically, up to 48 hours after your confirmed arrival in the United States. After this window, your session will expire automatically.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. Information We Collect -->
+  <section id="information-collected">
+    <h2><span class="icon">📂</span> 2. Information We Collect</h2>
+    <p>We collect the following categories of personal information in connection with your use of the App:</p>
+
+    <p><strong>a) Information You Provide Directly</strong></p>
+    <ul>
+      <li>Email address (used for OTP-based authentication)</li>
+      <li>One-Time Password (OTP) for login verification</li>
+      <li>Messages and queries submitted via the in-app Travel Assistant chat</li>
+    </ul>
+
+    <p><strong>b) Information Retrieved from Our CRM System (Zoho)</strong></p>
+    <ul>
+      <li>Full name (first name, last name, preferred name)</li>
+      <li>Date of birth</li>
+      <li>Primary and alternate email addresses</li>
+      <li>Phone number</li>
+      <li>Professional specialty and credentials</li>
+      <li>Flight itinerary and travel details (departure/arrival dates, airlines, flight numbers, layovers, port of entry)</li>
+      <li>Accommodation and arrival appointment information</li>
+      <li>Assigned concierge name, phone, email, and photo</li>
+      <li>Immigration and visa-related information (for display purposes)</li>
+      <li>Need-to-know information (allergies, medical conditions, dietary restrictions, accessibility needs, emergency contacts)</li>
+    </ul>
+
+    <p><strong>c) Documents</strong></p>
+    <ul>
+      <li>Flight confirmation documents</li>
+      <li>Welcome appointment schedules</li>
+      <li>Other relocation-related documents stored on our secure servers</li>
+    </ul>
+
+    <p><strong>d) Automatically Collected Technical Information</strong></p>
+    <ul>
+      <li>Device type and operating system (iOS or Android)</li>
+      <li>Session authentication tokens (stored locally on your device)</li>
+      <li>Session activity timestamps</li>
+      <li>Arrival confirmation action and timestamp</li>
+    </ul>
+  </section>
+
+  <!-- 3. How We Use -->
+  <section id="how-we-use">
+    <h2><span class="icon">⚙️</span> 3. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+      <li><strong>Authentication:</strong> To verify your identity via email-based OTP and maintain secure session access.</li>
+      <li><strong>Personalised Experience:</strong> To display your travel details, flight information, concierge contact, and arrival appointments within the App.</li>
+      <li><strong>Document Access:</strong> To retrieve and display documents relevant to your relocation (flight confirmations, welcome appointments).</li>
+      <li><strong>Travel Assistance:</strong> To power the in-app AI chat assistant, which uses your name, email, and relocation details to answer your questions accurately.</li>
+      <li><strong>Arrival Notifications:</strong> To notify the Infinity Care Partners team when you confirm your arrival in the United States.</li>
+      <li><strong>Support &amp; Communication:</strong> To facilitate communication between you, your concierge, and the ICP operations team.</li>
+      <li><strong>Security:</strong> To detect unauthorised access, expire sessions appropriately, and maintain the integrity of the portal.</li>
+    </ul>
+
+    <div class="highlight-box blue">
+      <p>
+        We do <strong>not</strong> use your personal information for marketing, advertising, or any purpose unrelated to your relocation and onboarding with Infinity Care Partners.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. Information Sharing -->
+  <section id="sharing">
+    <h2><span class="icon">🤝</span> 4. Information Sharing</h2>
+    <p>We do not sell, rent, or trade your personal information. We may share information only in the following limited circumstances:</p>
+    <ul>
+      <li>
+        <strong>Within Infinity Care Partners:</strong> Your information is accessible to authorised ICP staff, including your designated concierge, deployment specialist, and operational support team, solely for the purpose of facilitating your relocation.
+      </li>
+      <li>
+        <strong>Service Providers:</strong> We use trusted third-party service providers to operate the App, including:
+        <ul>
+          <li><em>Zoho CRM</em> – for candidate data management</li>
+          <li><em>Cloud hosting providers</em> – for secure server and document storage</li>
+        </ul>
+        These providers are contractually obligated to protect your data and may not use it for their own purposes.
+      </li>
+      <li>
+        <strong>Legal Obligations:</strong> We may disclose information if required by law, court order, or governmental authority.
+      </li>
+      <li>
+        <strong>Safety:</strong> We may share information if we believe disclosure is necessary to protect the rights, property, or safety of Infinity Care Partners, our candidates, or others.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 5. Storage & Security -->
+  <section id="storage">
+    <h2><span class="icon">🔒</span> 5. Data Storage &amp; Security</h2>
+    <p>
+      Your personal information is stored on secure servers operated by or on behalf of Infinity Care Partners. Authentication tokens are stored locally on your device using encrypted storage and are used solely to maintain your session.
+    </p>
+    <p>We employ the following security measures:</p>
+    <ul>
+      <li>JWT (JSON Web Token) based authentication with time-limited session tokens</li>
+      <li>HTTPS (TLS) encryption for all data transmitted between the App and our servers</li>
+      <li>Automatic session expiry 48 hours after confirmed arrival</li>
+      <li>Role-based access controls on all server-side APIs</li>
+      <li>OTP verification required at every login — no persistent passwords</li>
+    </ul>
+    <p>
+      While we implement industry-standard safeguards, no method of transmission or storage is 100% secure. We cannot guarantee absolute security but are committed to protecting your information to the best of our ability.
+    </p>
+  </section>
+
+  <!-- 6. Data Retention -->
+  <section id="retention">
+    <h2><span class="icon">🗓️</span> 6. Data Retention</h2>
+    <p>
+      Your data is retained in our CRM system for the duration of your engagement with Infinity Care Partners, including your onboarding, placement, and employment period. Session tokens stored on your device are automatically invalidated 48 hours after arrival confirmation or upon logout, whichever occurs first.
+    </p>
+    <p>
+      You may request deletion of your personal data at any time by contacting us (see Section 11). Some data may be retained for legal, contractual, or compliance purposes even after a deletion request.
+    </p>
+  </section>
+
+  <!-- 7. Your Rights -->
+  <section id="rights">
+    <h2><span class="icon">⚖️</span> 7. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+    <ul>
+      <li><strong>Right of Access:</strong> Request a copy of the personal information we hold about you.</li>
+      <li><strong>Right of Correction:</strong> Request that inaccurate or incomplete information be corrected.</li>
+      <li><strong>Right to Erasure:</strong> Request deletion of your personal data, subject to legal obligations.</li>
+      <li><strong>Right to Restriction:</strong> Request that we limit how we process your data in certain circumstances.</li>
+      <li><strong>Right to Object:</strong> Object to processing based on legitimate interests.</li>
+      <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+    </ul>
+    <p>
+      To exercise any of these rights, please contact us using the details in Section 11. We will respond to all verifiable requests within a reasonable timeframe.
+    </p>
+    <div class="highlight-box">
+      <p>
+        If you are a resident of Kenya, your rights are governed by the <strong>Kenya Data Protection Act, 2019</strong>. If you are located in the European Economic Area or United Kingdom, your rights are governed by the <strong>GDPR / UK GDPR</strong> as applicable.
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. Children's Privacy -->
+  <section id="children">
+    <h2><span class="icon">🧒</span> 8. Children's Privacy</h2>
+    <p>
+      The Candidate Travel Portal is intended exclusively for use by adult healthcare professionals (18 years of age and older). We do not knowingly collect personal information from individuals under the age of 18. If we become aware that a minor has provided us with personal information, we will take steps to delete such data promptly.
+    </p>
+  </section>
+
+  <!-- 9. Third-Party Services -->
+  <section id="third-party">
+    <h2><span class="icon">🔗</span> 9. Third-Party Services</h2>
+    <p>The App integrates with or references the following third-party services:</p>
+    <ul>
+      <li><strong>Zoho CRM:</strong> Used to store and retrieve candidate information. Zoho's privacy policy applies to data processed on their platform.</li>
+      <li><strong>Google Docs Viewer:</strong> Used to render document files (PDFs, Word documents) within the App. Documents are passed as encoded URLs; no document content is stored by Google.</li>
+      <li><strong>Expo (React Native framework):</strong> The App is built using the Expo platform. Expo may collect anonymised crash and diagnostic data per their own privacy policy.</li>
+      <li><strong>Airline &amp; flight tracking websites:</strong> External links to airline trackers open in a browser and are governed by those third parties' privacy policies.</li>
+    </ul>
+    <p>
+      We encourage you to review the privacy policies of any third-party services you interact with through the App.
+    </p>
+  </section>
+
+  <!-- 10. Changes -->
+  <section id="changes">
+    <h2><span class="icon">📝</span> 10. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will update the "Last Updated" date at the top of this document. We encourage you to review this policy periodically.
+    </p>
+    <p>
+      Continued use of the App after changes are posted constitutes your acceptance of the revised policy.
+    </p>
+  </section>
+
+
+</main>
+
+<footer>
+  <p><strong>Infinity Care Partners</strong> &nbsp;·&nbsp; Candidate Travel Portal</p>
+  <p style="margin-top:6px;">© <span id="yr"></span> Infinity Care Partners. All rights reserved.</p>
+  <p style="margin-top:6px; font-size:12px; opacity:0.65;">This privacy policy was last updated in April 2025 and applies to version 1.0 of the Candidate Travel Portal application.</p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
